@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarot lover</title>
+    <style>
+      body {
+        background-color: #030824;
+        margin: 60px auto;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #b3eefa;
+        width: 60%;
+      }
+      h1,
+      h2,
+      h3,
+      p {
+        text-align: center;
+      }
+      h2 {
+        font-size: 24px;
+        font-weight: lighter;
+        padding: 10px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border: 20px;
+        border-radius: 30px;
+      }
+      h3 {
+        line-height: 1.5;
+        font-size: 16px;
+      }
+      hr {
+        border-top: 1px solid #b3eefa;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #f30eae;
+        color: #52d681;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 30px;
+        width: 150px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 150ms ease-in-out;
+      }
+      button:hover {
+        background: #52d681;
+        color: #f30eae;
+        opacity: 0.9;
+        cursor: pointer;
+        border: none;
+      }
+      .imgEffect {
+        width: 500px;
+        margin: 0 auto;
+      }
+      .effect {
+        position: relative;
+        width: 500px;
+        height: 320px;
+        transition: 0.5s;
+        overflow: hidden;
+        border-radius: 25px;
+      }
+      .effect img {
+        width: 100%;
+        height: 100%;
+      }
+      .effect span {
+        position: absolute;
+        top: 0;
+        left: -110%;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.3);
+        transition: 0.5s;
+        transform: skewX(10deg);
+      }
+      .effect:hover {
+        box-shadow: 0 30px 35px rgba(0, 0, 0, 0.7);
+      }
+      .effect:hover span {
+        left: 110%;
+      }
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+      .learnMore {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        text-align: center;
+        border: 20px;
+      }
+      .learnMore:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🔮What is a Tarot reading?🔮</h1>
+      <h2><em>And why you should try one</em>😏</h2>
+      <hr />
+      <div class="imgEffect">
+        <div class="effect">
+          <span></span
+          ><img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/859/original/preen_tarot-ig-accts-560x374.jpg?1666525208"
+          />
+        </div>
+      </div>
+      <hr />
+      <br />
+      <h3>
+        There's a common stereotype that Tarot can predict the future, which is
+        not actually the case. Tarot reading's more of an instrument that's
+        helping a person to make a better connection with her/his/they own
+        intuition and inner knowledge.🙄In times of a lot of historical events
+        it's hard (and even dangerous sometimes) to rely only on logic,
+        rationality and decisions that are coming out of it. The future is not
+        carved in stone - it's changing every moment and Tarot can help you to
+        see a current situation with a fresh eye and what may be waiting for you
+        behind the corner. It doesn't need to be serious and life-changing every
+        time though - you may use it in a playful, yet respectful way. Tarot can
+        be a great friend, supporter on the way and there's a variety of
+        different Tarot decks - from classic Rider-Smith, eye-catching The Light
+        Seer's Tarot to super cute Cat's Tarot! Maybe it's time to check it out
+        yourself?👀
+      </h3>
+      <a
+        href="https://en.wikipedia.org/wiki/Tarot_card_reading"
+        target="_blank"
+        class="learnMore"
+      >
+        ✨Learn more on wiki✨
+      </a>
+      <button>💫<strong>Ready for an adventure?</strong></button>
+      <p>
+        Coded by 🧙‍♀️
+        <a
+          href="https://www.shecodes.io/graduates/58340-anna-bielikova"
+          target="_blank"
+        >
+          Anna Liko
+        </a>
+      </p>
+    </div>
+    <script>
+      function advent() {
+        let name = prompt("What is your name, love?");
+        let taro = prompt("Did you ever try a Tarot reading?")
+          .toLowerCase()
+          .trim();
+        if (taro === "yes") {
+          alert(`That's cool, ${name}! Keep going!🧙‍♀️`);
+        } else {
+          alert(`It's a perfect day to start, ${name}!🧙‍♀️`);
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", advent);
+    </script>
+  </body>
+</html>
